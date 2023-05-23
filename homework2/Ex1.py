@@ -9,5 +9,5 @@ counter = 0
 if coins:
     for coin in coins:
         if coin != coins[0]:
-            counter += 1git
+            counter += 1
 print( counter)
