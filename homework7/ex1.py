@@ -1,8 +1,8 @@
 #Задача34
 
 def check_rhythm(poem):
-    words = poem.split()  # Разделяем стихотворение на слова
-    syllables = []  # Список для хранения количества слогов в каждом слове
+    words = poem.split()  
+    syllables = []  
 
     for word in words:
         syllables.append(count_syllables(word))  # Подсчитываем слоги в каждом слове
@@ -21,3 +21,7 @@ def count_syllables(word):
             count += 1
 
     return count
+
+poem = input("Введите стихотворение Винни-Пуха: ")
+result = check_rhythm(poem)
+print(result)
